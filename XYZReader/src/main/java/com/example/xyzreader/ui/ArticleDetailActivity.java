@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.view.WindowInsets;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -108,24 +107,6 @@ public class ArticleDetailActivity extends AppCompatActivity
             }
         }
     }
-
-    private LoaderManager.LoaderCallbacks<Cursor> mCallback = new LoaderManager.LoaderCallbacks<Cursor>() {
-        @NonNull
-        @Override
-        public Loader<Cursor> onCreateLoader(int id, @Nullable Bundle args) {
-            return null;
-        }
-
-        @Override
-        public void onLoadFinished(@NonNull Loader<Cursor> loader, Cursor data) {
-
-        }
-
-        @Override
-        public void onLoaderReset(@NonNull Loader<Cursor> loader) {
-
-        }
-    };
 
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
